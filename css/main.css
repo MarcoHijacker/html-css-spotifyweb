@@ -1,7 +1,6 @@
 /* Custom CSS Spotify Web */
 
 /* Generali */
-
 * {
   margin: 0;
   padding: 0;
@@ -14,7 +13,6 @@ body {
 }
 
 /* Main */
-
 main {
   height: calc(100% - 90px);
   width: 100%;
@@ -52,11 +50,11 @@ main {
   color: white;
   text-decoration: none;
 }
-#frame > div {
-  margin-top: 20px;
-}
 #frame div ul li {
-  margin: 7px 0;
+  margin: 15px 0;
+}
+.logo, .playlist, .owner {
+  margin: 10px 0;
 }
 .logo img {
   width: 150px;
@@ -105,6 +103,15 @@ main {
 .owner {
   margin-top: auto;
 }
+.owner-info a {
+  display: flex;
+  align-items: center;
+}
+.owner-info a span {
+  padding-left: 7px;
+}
+
+/* Sezione Content */
 #content {
   background: green;
   width: calc(100% - 230px);
@@ -113,7 +120,6 @@ main {
 }
 
 /* Footer */
-
 footer {
   width: 100%;
   height: 90px;
@@ -121,6 +127,8 @@ footer {
   z-index: 900;
   background-color: red;
 }
+
+/* Sezione Player */
 #player {
   background-color: darkgray;
 }
