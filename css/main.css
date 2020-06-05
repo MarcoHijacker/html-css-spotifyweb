@@ -40,7 +40,7 @@ main {
   flex-direction: column;
   font-size: 14px;
   padding-left: 20px;
-  align-content: space-around;
+  justify-content: flex-start;
 }
 #frame a {
   color: #6d6d6d;
@@ -51,6 +51,12 @@ main {
 #frame a:hover {
   color: white;
   text-decoration: none;
+}
+#frame > div {
+  margin-top: 20px;
+}
+#frame div ul li {
+  margin: 7px 0;
 }
 .logo img {
   width: 150px;
@@ -68,9 +74,6 @@ main {
   width: 20px;
   height: auto;
 }
-.owner {
-  align-self: flex-end;
-}
 .owner-info a img {
   width: 20px;
   height: auto;
@@ -82,6 +85,25 @@ main {
   color: white;
   font-size: 12px;
   font-weight: 800;
+}
+.square-add {
+  display: inline-block;
+  background-color: #6d6d6d;
+  font-size: 28px;
+  color: white;
+  width: 36px;
+  text-align: center;
+  border-radius: 2px;
+}
+.playlist ul li a {
+  display: flex;
+  align-items: center;
+}
+.playlist ul li a span {
+  padding-left: 7px;
+}
+.owner {
+  margin-top: auto;
 }
 #content {
   background: green;
