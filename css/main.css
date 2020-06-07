@@ -7,7 +7,7 @@
   box-sizing: border-box;
 }
 body {
-  font-family: Montserrat;
+  font-family: 'Exo 2', sans-serif;
   width: 100%;
   height: 100vh;
 }
@@ -43,7 +43,7 @@ main {
 #frame a {
   color: #6d6d6d;
   text-decoration: none;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 600;
 }
 #frame a:hover {
@@ -72,6 +72,9 @@ main {
   width: 20px;
   height: auto;
 }
+.navigation {
+  position: relative;
+}
 .owner-info a img {
   width: 20px;
   height: auto;
@@ -87,11 +90,18 @@ main {
 .square-add {
   display: inline-block;
   background-color: #6d6d6d;
-  font-size: 28px;
-  color: white;
+  font-size: 24px;
+  color: black;
   width: 36px;
+  height: 34px;
   text-align: center;
   border-radius: 2px;
+}
+.playlist ul li:first-child:hover .square-add {
+  background-color: white;
+}
+.playlist {
+  overflow-y: auto;
 }
 .playlist ul li a {
   display: flex;
@@ -109,6 +119,26 @@ main {
 }
 .owner-info a span {
   padding-left: 7px;
+}
+.marker {
+  height: 24px;
+  width: 3px;
+  background-color: lightgreen;
+  position: absolute;
+  left: -20px;
+  display: none;
+}
+.navigation ul li:hover .marker {
+  display: block;
+}
+.navigation ul li:first-child .marker {
+  display: block;
+}
+.navigation ul li:first-child span {
+    color: white !important;
+}
+.install-app {
+  color: white;
 }
 
 /* Sezione Content */
