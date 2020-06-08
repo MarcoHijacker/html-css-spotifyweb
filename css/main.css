@@ -43,7 +43,7 @@ main {
 #frame a {
   color: #6d6d6d;
   text-decoration: none;
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 600;
 }
 #frame a:hover {
@@ -102,6 +102,7 @@ main {
 }
 .playlist {
   overflow-y: auto;
+  overflow-x: hidden;
 }
 .playlist ul li a {
   display: flex;
@@ -140,6 +141,15 @@ main {
 .install-app {
   color: white;
 }
+.install-app a i {
+  margin-right: 3px;
+}
+.separator {
+  width: 80%;
+  height: 1px;
+  background-color: #6d6d6d;
+  margin: 8px 0;
+}
 
 /* Sezione Content */
 #content {
@@ -155,10 +165,144 @@ footer {
   height: 90px;
   position: fixed;
   z-index: 900;
-  background-color: red;
 }
 
 /* Sezione Player */
 #player {
-  background-color: darkgray;
+  background-color: #282828;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  border-top: solid 1px #666;
+  align-items: center;
+  justify-content: space-between;
+}
+.track {
+  width: 230px;
+  display: flex;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.console {
+  width: 50%;
+}
+.volume {
+  width: 230px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.buttons {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.progress-bar {
+  width: 100%;
+  height: 40%;
+}
+.cover img {
+  width: 50px;
+  height: auto;
+}
+.song-name {
+  font-size: 14px;
+  color: white;
+  font-weight: 600;
+  margin-bottom: 1px;
+}
+.song-artist {
+  color: #6d6d6d;
+  font-size: 12px;
+  font-weight: 600;
+}
+.song-artist:hover {
+  text-decoration: underline;
+  color: white;
+}
+.track-buttons a i {
+  color: #6d6d6d;
+}
+.track-buttons a i:hover {
+  color: white;
+}
+.track-buttons i:first-child {
+  margin-right: 7px;
+}
+.track-info a {
+  text-decoration: none;
+  color: inherit;
+}
+.bigger-butt {
+  font-size: 28px;
+}
+.bigger-butt:hover {
+  font-size: 34px;
+}
+.buttons a i {
+  color: white;
+  margin: 0 20px;
+}
+.middle-bar {
+  height: 4px;
+  width: 75%;
+  border-radius: 2px;
+  background-color: #6d6d6d;
+  position: relative;
+}
+.middle-bar:hover .bar-elapsed {
+  background-color: lightgreen;
+}
+.middle-bar a {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.bar-elapsed {
+  position: absolute;
+  left: -4px;
+  width: 15%;
+  background-color: #c7c7c7;
+  height: 4px;
+  border-radius: 2px;
+  position: relative;
+}
+.bar-elapsed i {
+  font-size: 13px;
+  color: white;
+  display: none;
+  position: absolute;
+  right: -6px;
+  top: -4px;
+}
+.middle-bar:hover .bar-elapsed i {
+  display: block;
+}
+.progress-bar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 7px 0;
+}
+.time-start, .time-end {
+  font-size: 10px;
+  color: white;
+  font-weight: 800;
+}
+.volume a {
+  text-decoration: none;
+  color: white;
+  margin: 0 5px;
+}
+.volume > div {
+  margin: 0 5px;
+}
+.volume a i {
+  font-size: 14px;
+}
+.resized {
+  width: 50%;
 }
