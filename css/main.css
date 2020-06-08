@@ -179,11 +179,11 @@ main {
   font-size: 14px;
   height: 40px;
   width: 180px;
-  border: 1px solid white;
+  border: 2px solid white;
   border-radius: 14px;
   color: white;
   font-weight: 600;
-  margin-right: 10px;
+  margin-right: 15px;
 }
 .button-upg a {
   width: 100%;
@@ -195,9 +195,7 @@ main {
   align-items: center;
 }
 .button-upg:hover {
-  height: 42px;
-  width: 189px;
-  font-size: 15px;
+  transform: scale(1.05);
 }
 .section-title {
   color: white;
@@ -244,6 +242,7 @@ main {
   font-size: 10px;
   font-weight: 600;
   text-align: center;
+  margin-top: 5px;
 }
 .album-pic {
   position: relative;
@@ -379,7 +378,7 @@ footer {
   font-size: 28px;
 }
 .bigger-butt:hover {
-  font-size: 34px;
+  transform: scale(1.2);
 }
 .buttons a i {
   color: white;
