@@ -53,6 +53,9 @@ main {
 #frame div ul li {
   margin: 15px 0;
 }
+.logo {
+  z-index: 999;
+}
 .logo, .playlist, .owner {
   margin: 10px 0;
 }
@@ -157,11 +160,13 @@ main {
   width: calc(100% - 230px);
   height: 100%;
   float: left;
+  padding: 100px 15px;
+  overflow-y: scroll;
 }
 .upgrade {
-  height: 90px;
+  height: 70px;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.8);
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -190,9 +195,107 @@ main {
   align-items: center;
 }
 .button-upg:hover {
-  height: 44px;
-  width: 198px;
-  font-size: 16px;
+  height: 42px;
+  width: 189px;
+  font-size: 15px;
+}
+.section-title {
+  color: white;
+  font-size: 20px;
+  font-weight: 800;
+  text-align: left;
+  padding-left: 10px;
+  margin: 10px 0;
+}
+.alone {
+  margin-bottom: 25px;
+}
+.section-subtitle {
+  color: #6d6d6d;
+  font-size: 12px;
+  font-weight: 600;
+  text-align: left;
+  padding-left: 10px;
+  margin-bottom: 25px;
+}
+.box-items {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+.box-items > div {
+  height: 240px;
+  width: 150px;
+  margin: 0 10px;
+}
+.box-items a img {
+  width: 150px;
+  height: auto;
+}
+.album-title {
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 5px;
+}
+.album-artist {
+  color: #6d6d6d;
+  font-size: 10px;
+  font-weight: 600;
+  text-align: center;
+}
+.album-pic {
+  position: relative;
+}
+.rounded {
+  border-radius: 50%;
+}
+.album-title a, .album-artist a {
+  text-decoration: none;
+  color: inherit;
+}
+.album-item:hover .album-pic a img {
+  filter: brightness(0.5);
+}
+.album-pic i {
+  color: white;
+  font-size: 36px;
+  display: none;
+}
+.album-item:hover .album-pic i {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+#content nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  color: #6d6d6d;
+  font-size: 11px;
+}
+#content nav ul li a {
+  text-decoration: none;
+  color: inherit;
+}
+#content nav ul li {
+  margin: 0 10px;
+  position: relative;
+  height: 20px;
+}
+.marker-menu {
+  height: 3px;
+  width: 24px;
+  background-color: lightgreen;
+  margin: 0 auto;
+  display: none;
+  margin-top: 2px;
+}
+#content nav ul li:hover .marker-menu {
+  display: block;
 }
 
 /* Footer */
