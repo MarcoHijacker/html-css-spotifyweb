@@ -454,7 +454,7 @@ footer {
   font-size: 14px;
 }
 .resized {
-  width: 50%;
+  width: 40%;
 }
 
 /* Media Query for XS screens */
@@ -491,6 +491,9 @@ footer {
   }
   .middle-bar {
     width: 60%;
+  }
+  .resized {
+    width: 40%;
   }
 }
 @media all and (max-width: 535px) {
