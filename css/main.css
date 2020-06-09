@@ -503,7 +503,7 @@ footer {
 }
 @media all and (max-width: 450px) {
   .resized {
-    width: 30%;
+    width: 35%;
   }
   .volume {
     width: 160px;
