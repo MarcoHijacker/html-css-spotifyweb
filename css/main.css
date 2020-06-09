@@ -53,6 +53,9 @@ main {
 #frame div ul li {
   margin: 15px 0;
 }
+.logo-small {
+  display: none;
+}
 .logo {
   z-index: 999;
 }
@@ -272,6 +275,7 @@ main {
 #content nav ul {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   list-style: none;
   color: #6d6d6d;
   font-size: 11px;
@@ -292,6 +296,9 @@ main {
   margin: 0 auto;
   display: none;
   margin-top: 2px;
+}
+.alwayson {
+  display: block;
 }
 #content nav ul li:hover .marker-menu {
   display: block;
@@ -318,12 +325,17 @@ footer {
 .track {
   width: 230px;
   display: flex;
-  display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: flex-start;
+}
+.cover, .track-info {
+  margin-left: 5%;
+}
+.track-buttons {
+  margin-left: 10%;
 }
 .console {
-  width: 50%;
+  width: 35%;
 }
 .volume {
   width: 230px;
@@ -382,7 +394,7 @@ footer {
 }
 .buttons a i {
   color: white;
-  margin: 0 20px;
+  margin: 0 13px;
 }
 .middle-bar {
   height: 4px;
@@ -443,4 +455,86 @@ footer {
 }
 .resized {
   width: 50%;
+}
+
+/* Media Query for XS screens */
+
+@media all and (max-width: 599px) {
+  .logo, .menu-link, .playlist, .install-text, .username {
+    display: none;
+  }
+  .logo-small {
+    display: block;
+    width: 20px;
+    height: auto;
+    z-index: 999;
+    margin-top: 10px;
+  }
+  .homeicon {
+    z-index: 999;
+  }
+  .fa-arrow-circle-down {
+    padding-left: 3px;
+  }
+  .separator {
+    background-color: black;
+  }
+  #frame {
+    width: 50px;
+    padding-left: 0;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+  }
+  #content {
+    width: calc(100% - 50px);
+  }
+  .middle-bar {
+    width: 60%;
+  }
+}
+@media all and (max-width: 535px) {
+  .buttons a i {
+    margin: 0 5px;
+  }
+}
+@media all and (max-width: 450px) {
+  .resized {
+    width: 30%;
+  }
+  .volume {
+    width: 160px;
+  }
+}
+@media all and (max-width: 385px) {
+  .fa-list, .fa-desktop, .fa-heart, .fa-folder {
+    display: none;
+  }
+  .resized {
+    width: 50%;
+    position: relative;
+    right: 10px;
+  }
+  .fa-volume-up {
+    position: relative;
+    right: 10px;
+  }
+  .middle-bar {
+    width: 50%;
+  }
+}
+@media all and (max-width: 320px) {
+  .buttons a i {
+    margin: 0 3px;
+  }
+}
+@media all and (max-width: 300px) {
+  .buttons a i {
+    margin: 0 1px;
+  }
+}
+@media all and (max-width: 285px) {
+  .buttons a i {
+    margin: 0 0;
+  }
 }
