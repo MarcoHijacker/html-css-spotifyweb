@@ -109,6 +109,7 @@ main {
 .playlist {
   overflow-y: auto;
   overflow-x: hidden;
+  min-height: 100px;
 }
 .playlist ul li a {
   display: flex;
@@ -221,15 +222,18 @@ main {
 }
 .box-items {
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-around;
   flex-wrap: wrap;
 }
-.box-items > div {
+.filling-empty-space-childs {
+  width: 150px; /*the width of the images in this example*/
+  height: 0; /*Important! for the divs to collapse should they fall in a new row*/
+}
+.album-item {
   height: 240px;
   width: 150px;
-  margin: 0 10px;
 }
-.box-items a img {
+.album-item a img {
   width: 150px;
   height: auto;
 }
